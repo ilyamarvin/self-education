@@ -24,4 +24,9 @@ fun IntArray.isSorted(): Boolean {
 fun main() {
     val array: IntArray = intArrayOf(10, 15, 20)
     println(array.isSorted())
+
+    val strings = arrayOf("foo", "bar", null, "", 123)
+    for (s in strings){
+        s?.let { print ("$it ") }
+    }
 }
