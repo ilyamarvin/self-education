@@ -3,6 +3,14 @@ fun main() {
     testWhen(15)
     testWhen("asd")
 
+    val x = 5
+
+    when {
+        x%2==1 -> print("x is odd")
+        x%2==0 -> print("x is even")
+        else -> print("x is funny")
+    }
+
 }
 
 fun testWhen(input: Any) {
